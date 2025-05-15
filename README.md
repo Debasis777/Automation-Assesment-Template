@@ -9,10 +9,13 @@ This project is a starting point for completing the automation assessment. It in
 
 ## Requirements
 
-- .NET 6 or later
-- Node.js
-- Git
-- Playwright CLI
+- Use Playwright for .NET for UI automation.
+- Use Refit to interact with the API.
+- Include a clear README.md file with:
+- Setup instructions
+- How to run the tests
+- Any assumptions made
+- (Optional Bonus) Use GitHub Actions or other CI to run the tests automatically.
 
 ## Setup
 
@@ -20,13 +23,3 @@ This project is a starting point for completing the automation assessment. It in
 dotnet restore
 playwright install
 ```
-
-Requirements
-•	Use Playwright for .NET for UI automation.
-•	Use Refit to interact with the API.
-•	Include a clear README.md file with:
-o	Setup instructions
-o	How to run the tests
-o	Any assumptions made
-•	(Optional Bonus) Use GitHub Actions or other CI to run the tests automatically.
-
