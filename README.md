@@ -21,15 +21,12 @@ dotnet restore
 playwright install
 ```
 
-## Run Tests
+Requirements
+•	Use Playwright for .NET for UI automation.
+•	Use Refit to interact with the API.
+•	Include a clear README.md file with:
+o	Setup instructions
+o	How to run the tests
+o	Any assumptions made
+•	(Optional Bonus) Use GitHub Actions or other CI to run the tests automatically.
 
-```bash
-dotnet test
-```
-
-## Folder Structure
-
-- **Api/** - Add Refit interfaces and models
-- **Ui/** - Add Playwright UI tests
-- **EndToEnd/** - Combine UI + API for integration
-- **Utilities/** - Shared test setup (e.g., `TestBase.cs`)
