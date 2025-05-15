@@ -7,6 +7,13 @@ This project is a starting point for completing the automation assessment. It in
 - Playwright test base setup
 - Empty folder structure for organizing tests
 
+### Important Instructions
+
+1. Click **"Use this template"** (top right of the GitHub repo)
+2. **Create a new PRIVATE repository** from this template
+3. Complete the task in your private repo
+4. When finished, share the GitHub link with us (make sure we have access if your org blocks external users)
+
 ## Requirements
 
 - Use Playwright for .NET for UI automation.
