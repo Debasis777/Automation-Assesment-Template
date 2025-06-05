@@ -7,6 +7,8 @@ This project is a starting point for completing the automation assessment. It in
 - Playwright test base setup
 - Empty folder structure for organizing tests
 
+- You can write and show case your own tests in any manner you want. URL's for UI and API are below.
+
 ### Important Instructions
 
 1. Click **"Use this template"** (top right of the GitHub repo)
@@ -30,3 +32,8 @@ This project is a starting point for completing the automation assessment. It in
 dotnet restore
 playwright install
 ```
+
+## URL's to use
+UI: https://demoqa.com/automation-practice-form 
+API: https://reqres.in 
+
