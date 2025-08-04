@@ -13,7 +13,7 @@ public class TestBase : IAsyncLifetime
         _playwright = await Playwright.CreateAsync();
         _browser = await _playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
         {
-            Headless = true
+            Headless = false
         });
         _page = await _browser.NewPageAsync();
     }
