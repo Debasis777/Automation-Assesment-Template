@@ -1,39 +1,65 @@
-# C# Automation Assessment Template
+**Automation Assessment**
 
-This project is a starting point for completing the automation assessment. It includes:
+A test automation framework built with **.NET**, **xUnit**, **Playwright**, and **Refit** for end-to-end UI and API testing. This solution is designed to demonstrate both API contract validation and browser automation using modern testing libraries and practices.
 
-- Basic solution and project setup
-- Refit interface shell
-- Playwright test base setup
-- Empty folder structure for organizing tests
 
-- You can write and show case your own tests in any manner you want. URL's for UI and API are below.
+## Project Structure
 
-### Important Instructions
+AutomationAssessment/
+├── AutomationTests/
+│ ├── Api/
+│ │ ├── Factory/ # API client instantiation logic
+│ │ ├── Interface/ # Refit interfaces for API endpoints
+│ │ ├── Models/ # Request/response DTOs
+│ │ └── ReqResApiTests.cs # Test cases for ReqRes API
+│ ├── UI/
+│ │ └── PracticeFormTests.cs # End-to-end tests using Playwright
+│ ├── Utilities/ # Shared utilities (if needed)
+│ ├── Program.cs # Optional entry point for CLI-style runs
+│ └── ReqResApiTest.cs # (optional test file)
 
-1. Click **"Use this template"** (top right of the GitHub repo)
-2. **Create a new PRIVATE repository** from this template
-3. Complete the task in your private repo
-4. When finished, share the GitHub link with us (make sure we have access if your org blocks external users)
 
-## Requirements
 
-- Use Playwright for .NET for UI automation.
-- Use Refit to interact with the API.
-- Include a clear README.md file with:
-- Setup instructions
-- How to run the tests
-- Any assumptions made
-- (Optional Bonus) Use GitHub Actions or other CI to run the tests automatically.
+---
+
+## Technologies Used
+
+| Type       | Stack                                       |
+|------------|---------------------------------------------|
+| Language   | C# (.NET 8.0)                               |
+| Test Runner| [xUnit](https://xunit.net/)                 |
+| UI Testing | [Microsoft Playwright](https://playwright.dev/dotnet/) |
+| API Testing| [Refit (REST Interface)](https://github.com/reactiveui/refit) |
+| IDE        | Visual Studio 2022                          |
+
+---
+
+## Getting Started
+
+## Prerequisites
+
+- [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+- Visual Studio 2022 (with .NET and Web development workload)
+- Node.js (for Playwright) – only required if installing Playwright CLI
 
 ## Setup
 
-```bash
+1. **Clone the repository**:
+   
+   git clone https://github.com/your-username/AutomationAssessment.git
+   cd AutomationAssessment
+   Install dependencies:
+
+**Run the following in the root project folder:**
 dotnet restore
+
+**Install Playwright:**
 playwright install
-```
 
-## URL's to use
-UI: https://demoqa.com/automation-practice-form 
-API: https://reqres.in 
+**Running Tests**
+UI Tests
+Execute Playwright-based browser automation tests using xUnit:
+dotnet test --filter "FullyQualifiedName~AutomationTests.UI"
 
+**Run API tests using Refit against ReqRes:**
+dotnet test --filter "FullyQualifiedName~AutomationTests.Api"
